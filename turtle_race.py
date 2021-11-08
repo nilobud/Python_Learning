@@ -1,0 +1,52 @@
+import turtle
+import random
+# from random import *
+t = turtle.Pen()
+t.speed(0)
+t.penup()
+t.goto(-140, 140)
+for step in range(15):
+  t.right(90)
+  t.pendown()
+  t.forward(160)
+  t.penup()
+  t.backward(160)
+  t.left(90)
+  t.forward(20)
+ada = turtle.Pen()
+ada.color('red')
+ada.shape('turtle')
+ada.penup()
+ada.goto(-160, 100)
+ada.pendown()
+
+bob = turtle.Pen()
+bob.color('blue')
+bob.shape('turtle')
+bob.penup()
+bob.goto(-160, 70)
+bob.pendown()
+
+ivy = turtle.Pen()
+ivy.color('green')
+ivy.shape('turtle')
+ivy.penup()
+ivy.goto(-160, 40)
+ivy.pendown()
+
+jim = turtle.Pen()
+jim.color('orange')
+jim.shape('turtle')
+jim.penup()
+jim.goto(-160, 10)
+jim.pendown()
+
+for i in range(100):
+  # ada.forward(randint(1,5))
+  # bob.forward(randint(1,5))
+  # ivy.forward(randint(1,5))
+  # jim.forward(randint(1,5))
+  ada.forward(random.randint(1,5))
+  bob.forward(random.randint(1,5))
+  ivy.forward(random.randint(1,5))
+  jim.forward(random.randint(1,5))
